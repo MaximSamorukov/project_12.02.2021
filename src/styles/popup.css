@@ -1,0 +1,35 @@
+.popup-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-width: 100vw;
+  height: 100vh;
+  min-height: 100vh;
+  background-color: rgba(255, 255, 255, 0.282);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  width: 250px;
+  height: 250px;
+  background-color: white;
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table {
+  min-width: 80%;
+  width: 80%;
+  height: 80%;
+  min-height: 80%;
+}
+
+td {
+  width: 50%;
+}

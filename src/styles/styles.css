@@ -2,3 +2,7 @@
 @import "~normalize.css";
 @import "./topmenu.css";
 @import "./mainpage.css";
+@import 'ag-grid-community/dist/styles/ag-grid.css';
+@import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
+@import './list.css';
+@import './popup.css';

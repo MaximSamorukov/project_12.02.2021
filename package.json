@@ -28,6 +28,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "ag-grid-community": "^25.0.1",
+    "ag-grid-react": "^25.0.1",
     "antd": "^4.12.3",
     "axios": "^0.21.1",
     "leaflet": "^1.7.1",
