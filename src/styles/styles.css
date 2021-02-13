@@ -1,5 +1,4 @@
+@import '~antd/dist/antd.css';
 @import "~normalize.css";
-
-div {
-  color: red;
-}
+@import "./topmenu.css";
+@import "./mainpage.css";
