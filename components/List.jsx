@@ -20,8 +20,6 @@ export default class List extends React.Component {
     const { data } = e;
     let { popupIsShown } = this.state;
     popupIsShown = !popupIsShown;
-    console.log(data);
-    console.log(this)
     this.setState({
       popupIsShown,
       popupData: data,
@@ -31,10 +29,6 @@ export default class List extends React.Component {
   render() {
     const { info } = this.props;
     const { popupIsShown, popupData } = this.state;
-    console.log(info);
-    // const [gridApi, setGridApi] = useState(null);
-    // const [gridColumnApi, setGridColumnApi] = useState(null);
-    // const [rowData, setRowData] = useState(info);
     return (
       <div className="site-layout-content list-container ag-theme-alpine">
         {popupIsShown ? <Popup popupData={popupData} callback={this.setPopupIsNotShown.bind(this)} /> : ''}
