@@ -1,11 +1,11 @@
 const axios = require('axios');
 
 function getData() {
-  const corsurl = 'https://cors-anywhere.herokuapp.com/';
-  const baseURL = `${corsurl}http://btn.bz/api/api.php/`;
+  const baseURL = `http://btn.bz/api/api.php`;
   return axios({
     method: 'get',
     baseURL,
+    url: '/',
   })
     .then((data) => {
       return data;
@@ -13,6 +13,11 @@ function getData() {
     .catch((error) => {
       console.log(error);
     })
+}
+
+function getJsonData() {
+  const json = import('../assets/data.json');
+  return json;
 }
 
 function getStaticData() {
@@ -25,4 +30,4 @@ function getId(str) {
   return parseInt(id, 10);
 }
 
-module.exports = { getData, getStaticData, getId };
+module.exports = { getData, getStaticData, getId, getJsonData };
