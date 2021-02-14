@@ -27,7 +27,7 @@ export default class Map extends React.Component {
     }).addTo(this.map);
     info.map((i) => {
       const icon = L.icon({
-        iconUrl: '../src/assets/img/icon.png',
+        iconUrl: './icon.png',
         className: `iconid-${i.id}`,
       });
       const { lat, lon } = i;
