@@ -20,4 +20,9 @@ function getStaticData() {
   return data;
 }
 
-module.exports = { getData, getStaticData };
+function getId(str) {
+  const id = str.split(' ')[1].split('-')[1];
+  return parseInt(id, 10);
+}
+
+module.exports = { getData, getStaticData, getId };

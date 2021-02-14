@@ -8,7 +8,6 @@ export default class List extends React.Component {
     this.state = {
       popupIsShown: false,
       popupData: {},
-
     }
   }
 
@@ -20,10 +19,16 @@ export default class List extends React.Component {
     const { data } = e;
     let { popupIsShown } = this.state;
     popupIsShown = !popupIsShown;
-    this.setState({
-      popupIsShown,
-      popupData: data,
-    })
+    if (popupIsShown) {
+      this.setState({
+        popupIsShown,
+        popupData: data,
+      })
+    } else {
+      this.setState({
+        popupIsShown,
+      })
+    }
   }
 
   render() {
