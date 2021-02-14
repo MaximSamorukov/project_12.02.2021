@@ -46,6 +46,7 @@ class App extends React.Component {
         <Content style={{ padding: '0 50px' }}>
           {page === 'main' ? <MainPage /> : page === 'map' ? <Map info={info} /> : <List info={info} />}
         </Content>
+        <Footer>Maxim Samorukov</Footer>
       </Layout>
     )
   }
