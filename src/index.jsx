@@ -38,6 +38,19 @@ class App extends React.Component {
 
   render() {
     const { page, info } = this.state;
+    if (info.length === 0) {
+      return (
+        <Layout className="layout">
+          <Header>
+            <TopMenu callback={this.setPage.bind(this)} />
+          </Header>
+          <Content style={{ padding: '0 50px' }}>
+            <MainPage />
+          </Content>
+          <Footer>Maxim Samorukov</Footer>
+        </Layout>
+      )
+    }
     return (
       <Layout className="layout">
         <Header>
