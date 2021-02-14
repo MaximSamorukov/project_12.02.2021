@@ -27,7 +27,6 @@ class App extends React.Component {
   componentDidMount() {
     const info = [];
     if (this.state.info.length === 0) {
-      this.setState({ info });
       getStaticData().then((data) => {
         for (let i = 0; i < data.length; i += 1) {
           info.push(data[i]);
